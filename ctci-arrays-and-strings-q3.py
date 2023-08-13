@@ -31,14 +31,14 @@ def replace_spaces(str_a):
 
 print(replace_spaces(" M r 3ohn S m i t h    "))
 
-
-" M r"
-"%20M r"
-"%20M%20r"
-" M r"
-
-" M%20" + "r"
-
+# SOLUTION
+# A common approach in string manipulation problems is to edit the string starting from the end and working
+# backwards. This is useful because we have an extra buffer at the end, which allows us to change characters
+# without worrying about what we're overwriting.
+# We will use this approach in this problem. The algorithm employs a two-scan approach. In the first scan, we
+# count the number of spaces. By tripling this number, we can compute how many extra characters we will
+# have in the final string. In the second pass, which Is done in reverse order, we actually edit the string. When
+# we see a space, we replace it with %20. If there is no space, then we copy the original character
 
 
 
